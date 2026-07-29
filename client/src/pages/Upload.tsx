@@ -30,7 +30,7 @@ type UploadState = 'idle' | 'uploading' | 'review' | 'saving' | 'done'
 export default function Upload() {
   const navigate = useNavigate()
   const [state, setState] = useState<UploadState>('idle')
-  const [result, setResult] = useState<ReceiptResult | null>(null)
+  const [, setResult] = useState<ReceiptResult | null>(null)
   const [editedResult, setEditedResult] = useState<ReceiptResult | null>(null)
   const [error, setError] = useState('')
   const [preview, setPreview] = useState<string | null>(null)
